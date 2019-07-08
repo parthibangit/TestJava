@@ -13,7 +13,7 @@ public class AscendingOrder {
 	public static void main(String[] args)
 	{
 		
-      int[] numbers={3,5,1,6,2,8,9};
+      int[] numbers={300,53,15,63,24,85,99};
       List<Integer> list=new ArrayList<Integer>();
       
       for(int value:numbers)

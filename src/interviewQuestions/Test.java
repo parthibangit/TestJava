@@ -1,9 +1,7 @@
 package interviewQuestions;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
+import java.util.HashMap;
+
 
 
 /**
@@ -19,37 +17,23 @@ public class Test
 	
 	public static void main(String[] args)
 	{
-		browser("ie");
-	}
-	
-	
-	
-	static void browser(String browserName)
-	{
 		
+		String ele_name  ="Parthiban_@_Subburam_@_Automation Engineer";
+		String[] ele_obj = ele_name.split("_@_");
+		String[] ele_index = {"first name","last name","des"};
 		
-		
-		switch(browserName)
+		HashMap<String, String> set_obj = new HashMap<String, String>();
+		int i = 0;
+		for(String arrayValue:ele_obj)	
 		{
-		case "chrome":
-			  
-			  System.out.println("Chrome driver matched");
-			  break;
-			  
-		case "firefox":
-			  
-			  System.out.println("Firefox driver matched");
-			  break;
-			  
-		case "ie":
+			set_obj.put(ele_index[i], arrayValue);
+			i++;
 			
-			  System.out.println("IE browser opened");
-			  break;	  
-			  
-	    default:
-	    	
-	    	 System.out.println("None of the browsers matched - So default chrome browser opened");
 		}
-	}
-	
+		
+		System.out.println("First Name is: "+ set_obj.get("first name"));
+		System.out.println("Lat Name is: "+ set_obj.get("last name"));
+		System.out.println("designation is: "+ set_obj.get("des"));
+		
+	}		
 }
