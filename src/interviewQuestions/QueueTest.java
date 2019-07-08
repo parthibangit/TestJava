@@ -14,14 +14,11 @@ public class QueueTest {
 		queue.add("Sarathi");
 		queue.add("Parthiban");
 		
-//		String name = queue.element();
-//		String name=queue.peek();
-//		System.out.println("First name is: "+ name);
-		
 		String removedElement=queue.remove();
 		System.out.println("Removed element is: "+removedElement);
 		
 		Iterator<String> itr = queue.iterator();
+		
 		
 		int i=0;
 		while(itr.hasNext())
@@ -35,11 +32,11 @@ public class QueueTest {
 			
 			else 
 			{
-				System.out.println( i +" name is " + itr.next());
+				System.out.println( i +" name is " + value);
 				i++;
 			}
 		}
-		
+				
 	}
 
 }
