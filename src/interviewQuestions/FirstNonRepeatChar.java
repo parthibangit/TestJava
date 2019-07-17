@@ -12,8 +12,7 @@ public class FirstNonRepeatChar {
 	    
 		String s="abcda";
 		nonRepeatedchar(s);
-		
-		
+
 	}
 	
 	

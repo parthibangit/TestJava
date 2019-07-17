@@ -19,7 +19,6 @@ public class FirstDuplicate
 	
 		public static void main(String[] args)  
 		{
-		   
 			 int[] a={3,2,4,3,6,2}; 
 		     System.out.println(duplicate(a));
 		 }   
