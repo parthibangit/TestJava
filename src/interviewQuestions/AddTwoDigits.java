@@ -20,4 +20,8 @@ public class AddTwoDigits
 	{
 		return (n%10) + n/10;
 	}
+	
+	public void twoDigit() {
+		System.out.println("Test Add");
+	}
 }
